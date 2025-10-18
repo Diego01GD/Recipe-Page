@@ -1,0 +1,163 @@
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose50: hsl(330, 100%, 98%);
+  --Rose800: hsl(332, 51%, 32%);
+}
+
+@font-face {
+  font-family: "Young-Serif";
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Outfit";
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: Outfit;
+  color: var(--Stone600);
+  line-height: 1.2;
+}
+
+
+.container{
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+
+  body{
+    padding: 60px;
+    background-color: var(--Stone100);
+  }
+
+    .container{
+      width: 65%;
+      margin: auto;
+      border-radius: 15px;
+      background-color: var(--White);
+    }
+}
+
+.image img{
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.title{
+  margin-bottom: 18px;
+  color: var(--Stone900);
+  font-family: Young-serif;
+}
+
+.text_preparation{
+  width: 100%;
+  background-color: var(--Rose50);
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.text_preparation h3{
+  color: var(--Rose800);
+  margin-bottom: 15px;
+}
+
+.text_preparation ul{
+  margin-left: 25px;
+  line-height: 1.9;
+}
+
+.text_preparation li{
+  padding-left: 15px;
+}
+
+.bold{
+  color: var(--Stone600);
+  font-weight: bold;
+}
+
+.normal{
+  color: var(--Stone600);
+  font-weight: normal;
+}
+
+.text_ingredients{
+  padding: 20px 0;
+  border-bottom: 1px solid var(--Stone150);
+}
+
+.subtittle{
+  font-size: 30px;
+  font-family: Young-serif;
+  margin-bottom: 18px;
+  color: var(--Brown800);
+}
+
+.text_ingredients ul{
+  margin-left: 27px;
+  color: var(--Brown800);
+}
+
+.text_ingredients li{
+  padding-left: 16px;
+  line-height: 1.9;
+}
+
+.text_instructions{
+  padding: 20px 0;
+  border-bottom: 1px solid var(--Stone150);
+}
+
+.text_instructions ol{
+ margin-left: 25px;
+}
+
+.text_instructions li{
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--Brown800);
+}
+
+.text_nutrition{
+  padding: 20px 0 0 0;
+}
+
+.text_nutrition table{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.text_nutrition td{
+  border-bottom: 1px solid var(--Stone150);
+  padding: 10px;
+}
+
+.text_nutrition td:last-of-type{
+  color: var(--Brown800);
+  font-weight: bold;
+}
+
+.final td{
+  border: none;
+}
+
+.attribution{
+  text-align: center;
+  margin-top: 20px;
+}
